@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Course Hub 🚀
 
-## Getting Started
+An Adaptive Learning & Collaborative Resource Hub specifically tailored for university students in Ethiopia. Course Hub centralizes curriculum-based learning materials, facilitates real-time social interactions, and integrates AI-powered study aids to elevate the academic experience.
 
-First, run the development server:
+---
 
+## 🛠️ Tech Stack & Architecture
+
+### Frontend (Client Side)
+* **Framework:** Next.js (React) using the modern App Router architecture.
+* **Styling:** Tailwind CSS for a fully responsive, clean layout design.
+* **State & UI:** Highly interactive user experiences with optimized DOM manipulation and component styling.
+
+### Backend & Database (Server Side)
+* **Database:** PostgreSQL managed via Supabase.
+* **Authentication:** Secure user session handling and profile management built with Supabase Auth.
+* **Data Flow & Storage:** Public and private storage buckets for organizing course materials alongside efficient relational data models.
+
+### AI Integration
+* **API Wrapper:** Gemini Studio API integration to dynamically process uploaded documents, generate structured study notes, and create automated learning aids.
+
+---
+
+## ✨ Core Features
+
+* **AI Study Assistant:** Automatically parses course documents to generate comprehensive study notes and interactive flashcards via the Gemini API.
+* **Real-Time Student Collaboration:** Live document upvoting loops, peer reviews, and interactive comment sections driven by PostgreSQL database connections.
+* **Advanced Material Discovery:** Fast, full-text filtering systems allowing students to pinpoint exact curriculum resources instantly.
+* **Secure Environment:** Protected backend routes ensuring data flow integrity and restricted file access based on user authorization.
+
+---
+
+## 🚀 Getting Started & Local Installation
+
+Follow these steps to spin up the project in your local development environment:
+
+1. **Clone the repository:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   git clone [https://github.com/Abiyamm/course-hub.git](https://github.com/Abiyamm/course-hub.git)
+   cd course-hub
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   GEMINI_API_KEY=your_gemini_studio_api_key
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   npm run dev
