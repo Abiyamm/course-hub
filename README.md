@@ -30,19 +30,3 @@ An Adaptive Learning & Collaborative Resource Hub specifically tailored for univ
 
 ---
 
-## 🚀 Getting Started & Local Installation
-
-Follow these steps to spin up the project in your local development environment:
-
-1. **Clone the repository:**
-```bash
-   git clone [https://github.com/Abiyamm/course-hub.git](https://github.com/Abiyamm/course-hub.git)
-   cd course-hub
-
-   npm install
-
-   NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-   GEMINI_API_KEY=your_gemini_studio_api_key
-
-   npm run dev
